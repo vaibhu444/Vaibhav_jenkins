@@ -1,15 +1,8 @@
-pipeline {
+pipeline{
  agent any
- stages {
-    stage('version') {
-        steps {
-            sh 'python3 --version'
-        }
+ stage('version') {
+    steps {
+        sh 'python3 main.py'
     }
-    stage('version') {
-        steps {
-            sh 'python3 main.py'
-        }
-    }
-  }
+ }
 }
