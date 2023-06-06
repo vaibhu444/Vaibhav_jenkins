@@ -3,7 +3,7 @@ pipeline{
  stages{
     stage('version') {
     steps {
-        sh 'apt-get install python3.6 -y && python3 --version'
+        sh 'sudo apt-get install python3.6 -y && python3 --version'
     }
     }
  }
