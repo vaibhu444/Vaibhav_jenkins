@@ -3,7 +3,7 @@ pipeline{
  stages{
     stage('version') {
     steps {
-        sh 'python3 main.py'
+        sh 'RUN apk add python3 && python3 main.py'
     }
     }
  }
